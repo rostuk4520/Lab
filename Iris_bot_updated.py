@@ -328,7 +328,6 @@ class Bot(Thread):
             return int(user_id)
 
         def find_user(message: str):
-            print('!!!!!!', event.message_data)
             if 'reply_message' in event.message_data:
                 user_id = event.message_data['reply_message']['from_id']
             elif message.find('https://vk.com/') != -1:
