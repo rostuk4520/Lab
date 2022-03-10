@@ -646,7 +646,7 @@ class Bot(Thread):
                                         elif event.message.lower().split()[1] == 'всех':
                                             user_ids = find_many_users_id(
                                                 event.message)
-                                            send_message(event.peer_id, f'Запускаю заражение всех из списка!\nЗаражаю {len(find_many_users_id)}')
+                                            send_message(event.peer_id, f'Запускаю заражение всех из списка!\nЗаражаю {len(user_ids)}')
                                             for user in user_ids:
                                                 if user.startswith('https://vk.com/'):
                                                     user = user.split(
