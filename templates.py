@@ -172,7 +172,7 @@ class Bot(Thread):
                             msg = 'Ваш список шаблонов:'
                             if len(self.templates) > 0:
                                 for tmp in self.templates:
-                                    msg += f'\n!{tmp}!'
+                                    msg += f'\n{tmp}'
                             else:
                                 msg = 'Ваш список шаблонов пуст.'
                             vk.messages.edit(
